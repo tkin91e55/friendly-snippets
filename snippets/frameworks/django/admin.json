@@ -18,7 +18,7 @@
             "\tordering = ('${9}',)"
         ],
         "description": "Model Admin View",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "stackedinline": {
         "prefix": "stackedinline",
@@ -33,7 +33,7 @@
             "\traw_id_fields = (${6},)"
         ],
         "description": "Stacked Inline",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "tabularinline": {
         "prefix": "tabularinline",
@@ -48,7 +48,7 @@
             "\traw_id_fields = (${6},)"
         ],
         "description": "Tabular Inline",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "simplelistfilter": {
         "prefix": "simplelistfilter",
@@ -65,31 +65,31 @@
             "\t\treturn queryset"
         ],
         "description": "Admin SimpleList Filter",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "iadmin": {
         "prefix": "iadmin",
         "body": "from django.contrib import admin",
         "description": "from ... import admin",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "iadminsite": {
         "prefix": "iadminsite",
         "body": "from django.contrib.admin import AdminSite",
         "description": "from ... import AdminSite",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "register": {
         "prefix": "register",
         "body": "admin.site.register($1)",
         "description": "register the model class without providing a ModelAdmin description.",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "registermadmin": {
         "prefix": "registermadmin",
         "body": "admin.site.register($1, $1Admin)",
         "description": "register the model class providing a ModelAdmin description",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "fieldsets": {
         "prefix": "fieldsets",
@@ -103,6 +103,6 @@
             ")"
         ],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     }
 }

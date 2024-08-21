@@ -6,25 +6,25 @@
             "register = template.Library()"
         ],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "li18n": {
         "prefix": "li18n",
         "body": "{% load i18n %}",
         "description": "",
-        "scope": "text.html.django"
+        "scope": "text.html.htmldjango"
     },
     "lstatic": {
         "prefix": "lstatic",
         "body": "{% load staticfiles %}",
         "description": "",
-        "scope": "text.html.django"
+        "scope": "text.html.htmldjango"
     },
     "ltags": {
         "prefix": "ltags",
         "body": "{% load $SELECTION$1_tags %}",
         "description": "",
-        "scope": "text.html.django"
+        "scope": "text.html.htmldjango"
     },
     "register_assignment_tag": {
         "prefix": "register_assignment_tag",
@@ -35,13 +35,13 @@
             "\treturn ${3:$1}"
         ],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "register_filter": {
         "prefix": "register_filter",
         "body": ["@register.filter", "def $1(value):", "\treturn value$2"],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "register_inclusion_tag": {
         "prefix": "register_inclusion_tag",
@@ -56,7 +56,7 @@
             "\t}"
         ],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     },
     "register_simple_tag": {
         "prefix": "register_simple_tag",
@@ -67,6 +67,6 @@
             "\treturn ${2:'It Works!'}"
         ],
         "description": "",
-        "scope": "source.python"
+        "scope": "source.python.django"
     }
 }
