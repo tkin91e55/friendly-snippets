@@ -2,7 +2,8 @@
     "autoescape": {
         "prefix": "autoescape",
         "description": "autoescape tag django template",
-        "body": ["{% autoescape ${off} %}", "$2", "{% autoescape %}"]
+        "body": ["{% autoescape ${off} %}", "$2", "{% autoescape %}"],
+        "scope": "source.html.htmldjango"
     },
     "block": {
         "prefix": "block",
@@ -11,52 +12,62 @@
             "{% block ${blockname} %}",
             "$2",
             "{% endblock ${blockname} %}"
-        ]
+        ],
+        "scope": "source.html.htmldjango"
     },
     "comment": {
         "prefix": "comment",
         "description": "Comment tag django template",
-        "body": ["{% comment %}", "  $1", "{% endcomment %}"]
+        "body": ["{% comment %}", "  $1", "{% endcomment %}"],
+        "scope": "source.html.htmldjango"
     },
     "csrf": {
         "prefix": "csrf",
         "description": "csrf token django template",
-        "body": ["{% csrf_token %}"]
+        "body": ["{% csrf_token %}"],
+        "scope": "source.html.htmldjango"
     },
     "cycle": {
         "prefix": "cycle",
         "description": "cycle tag django template",
-        "body": ["{% cycle %}"]
+        "body": ["{% cycle %}"],
+        "scope": "source.html.htmldjango"
     },
     "debug": {
         "prefix": "debug",
         "description": "debug tag django template",
-        "body": ["{% debug %}"]
+        "body": ["{% debug %}"],
+        "scope": "source.html.htmldjango"
     },
     "ext": {
         "prefix": "ext",
         "description": "extends tag django template",
-        "body": ["{% extends \"$1\" %}"]
+        "body": ["{% extends \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "extends": {
         "prefix": "extends",
         "description": "extends tag django template",
-        "body": ["{% extends \"$1\" %}"]
+        "body": ["{% extends \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "filter": {
         "prefix": "filter",
         "description": "filter tag django template",
-        "body": ["{% filter $1 %}", "$2", "{% endfilter %}"]
+        "body": ["{% filter $1 %}", "$2", "{% endfilter %}"],
+        "scope": "source.html.htmldjango"
     },
     "firstof": {
         "prefix": "firstof",
         "description": "firstof tag django template",
-        "body": ["{% firstof %}"]
+        "body": ["{% firstof %}"],
+        "scope": "source.html.htmldjango"
     },
     "for": {
         "prefix": "for",
         "description": "for tag django template",
-        "body": ["{% for $1 in $2 %}", "$3", "{% endfor %}"]
+        "body": ["{% for $1 in $2 %}", "$3", "{% endfor %}"],
+        "scope": "source.html.htmldjango"
     },
     "fore": {
         "prefix": "fore",
@@ -67,156 +78,194 @@
             "{% empty %}",
             "$4",
             "{% endfor %}"
-        ]
+        ],
+        "scope": "source.html.htmldjango"
     },
     "if": {
         "prefix": "if",
         "description": "if tag django template",
-        "body": ["{% if $1 %}", "$2", "{% endif %}"]
+        "body": ["{% if $1 %}", "$2", "{% endif %}"],
+        "scope": "source.html.htmldjango"
     },
     "ifchanged": {
         "prefix": "ifchanged",
         "description": "ifchanged tag django template",
-        "body": ["{% ifchanged $1 %}", "$2", "{% endifchanged %}"]
+        "body": ["{% ifchanged $1 %}", "$2", "{% endifchanged %}"],
+        "scope": "source.html.htmldjango"
     },
     "ife": {
         "prefix": "ife",
         "description": "if else tag django template",
-        "body": ["{% if $1 %}", "$2", "{% else %}", "$3", "{% endif %}", ""]
+        "body": ["{% if $1 %}", "$2", "{% else %}", "$3", "{% endif %}", ""],
+        "scope": "source.html.htmldjango"
     },
     "ifelse": {
         "prefix": "ifelse",
         "description": "if else tag django template",
-        "body": ["{% if $1 %}", "$2", "{% else %}", "$3", "{% endif %}", ""]
+        "body": ["{% if $1 %}", "$2", "{% else %}", "$3", "{% endif %}", ""],
+        "scope": "source.html.htmldjango"
     },
     "ifeq": {
         "prefix": "ifeq",
         "description": "ifequal tag django template",
-        "body": ["{% ifequal $1 %}", "$2", "{% endifequal %}"]
+        "body": ["{% ifequal $1 %}", "$2", "{% endifequal %}"],
+        "scope": "source.html.htmldjango"
     },
     "ifequal": {
         "prefix": "ifeq",
         "description": "ifequal tag django template",
-        "body": ["{% ifequal $1 %}", "$2", "{% endifequal %}"]
+        "body": ["{% ifequal $1 %}", "$2", "{% endifequal %}"],
+        "scope": "source.html.htmldjango"
     },
     "ifnotequal": {
         "prefix": "ifnotequal",
         "description": "ifnotequal tag django template",
-        "body": ["{% ifnotequal $1 %}", "$2", "{% ifnotequal %}"]
+        "body": ["{% ifnotequal $1 %}", "$2", "{% ifnotequal %}"],
+        "scope": "source.html.htmldjango"
     },
     "inc": {
         "prefix": "inc",
         "description": "include tag django template",
-        "body": ["{% include \"$1\" %}"]
+        "body": ["{% include \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "include": {
         "prefix": "include",
         "description": "include tag django template",
-        "body": ["{% include \"$1\" %}"]
+        "body": ["{% include \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "load": {
         "prefix": "load",
         "description": "load tag django template",
-        "body": ["{% load $1 %}"]
+        "body": ["{% load $1 %}"],
+        "scope": "source.html.htmldjango"
     },
     "now": {
         "prefix": "now",
         "description": "now tag django template",
-        "body": ["{% now \"$1\" %}"]
+        "body": ["{% now \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "regroup": {
         "prefix": "regroup",
         "description": "regroup tag django template",
-        "body": ["{% regroup $1 by $2 as $3 %}"]
+        "body": ["{% regroup $1 by $2 as $3 %}"],
+        "scope": "source.html.htmldjango"
     },
     "spaceless": {
         "prefix": "spaceless",
         "description": "spaceless tag django template",
-        "body": ["{% spaceless %}", "  $1", "{% endspaceless %}"]
+        "body": ["{% spaceless %}", "  $1", "{% endspaceless %}"],
+        "scope": "source.html.htmldjango"
     },
     "ssi": {
         "prefix": "ssi",
         "description": "ssi tag django template",
-        "body": ["{% ssi $1 parsed %}"]
+        "body": ["{% ssi $1 parsed %}"],
+        "scope": "source.html.htmldjango"
     },
     "static": {
         "prefix": "static",
         "description": "static tag django template",
-        "body": ["{% static \"$1\" %}"]
+        "body": ["{% static \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "templatetag": {
         "prefix": "templatetag",
         "description": "templatetag tag django template",
-        "body": ["{% templatetag $1 %}"]
+        "body": ["{% templatetag $1 %}"],
+        "scope": "source.html.htmldjango"
     },
     "url": {
         "prefix": "url",
         "description": "url tag django template",
-        "body": ["{% url $1 %}"]
+        "body": ["{% url $1 %}"],
+        "scope": "source.html.htmldjango"
     },
     "verbatim": {
         "prefix": "verbatim",
         "description": "verbatim tag django template",
-        "body": ["{% verbatim %}", "  $1", "{% endverbatim %}"]
+        "body": ["{% verbatim %}", "  $1", "{% endverbatim %}"],
+        "scope": "source.html.htmldjango"
     },
     "widthratio": {
         "prefix": "widthratio",
         "description": "widthratio tag django template",
-        "body": ["{% widthratio ${this_value} max_value 100 %}"]
+        "body": ["{% widthratio ${this_value} max_value 100 %}"],
+        "scope": "source.html.htmldjango"
     },
     "with": {
         "prefix": "with",
         "description": "with tag django template",
-        "body": ["{% with $1 as $2 %}", "$3", "{% endwith %}"]
+        "body": ["{% with $1 as $2 %}", "$3", "{% endwith %}"],
+        "scope": "source.html.htmldjango"
     },
     "trans": {
         "prefix": "trans",
         "description": "trans tag django template",
-        "body": ["{% trans \"$1\" %}"]
+        "body": ["{% trans \"$1\" %}"],
+        "scope": "source.html.htmldjango"
     },
     "blocktrans": {
         "prefix": "blocktrans",
         "description": "blocktrans tag django template",
-        "body": ["{% blocktrans %}", "  $1", "{% endblocktrans %}"]
+        "body": ["{% blocktrans %}", "  $1", "{% endblocktrans %}"],
+        "scope": "source.html.htmldjango"
     },
     "blocktransinline": {
         "prefix": "blocktransinline",
         "description": "blocktrans tag django template (single line)",
-        "body": ["{% blocktrans %}$1{% endblocktrans %}"]
+        "body": ["{% blocktrans %}$1{% endblocktrans %}"],
+        "scope": "source.html.htmldjango"
     },
     "super": {
         "prefix": "super",
         "description": "Block super",
-        "body": ["{{ block.super }}"]
+        "body": ["{{ block.super }}"],
+        "scope": "source.html.htmldjango"
     },
     "extrahead": {
         "prefix": "extrahead",
         "description": "Extrahead no oficial tag",
-        "body": ["{% block extrahead %}", "    $1", "{% endblock extrahead %}"]
+        "body": ["{% block extrahead %}", "    $1", "{% endblock extrahead %}"],
+        "scope": "source.html.htmldjango"
     },
     "extrastyle": {
         "prefix": "extrastyle",
         "description": "Extrastyle no oficial Tag",
-        "body": ["{% block extrahead %}", "    $1", "{% endblock extrahead %}"]
+        "body": ["{% block extrahead %}", "    $1", "{% endblock extrahead %}"],
+        "scope": "source.html.htmldjango"
     },
     "var": {
         "prefix": "var",
         "description": "Variable autocomplete",
-        "body": ["{{ $1 }}"]
+        "body": ["{{ $1 }}"],
+        "scope": "source.html.htmldjango"
     },
     "tag": {
         "prefix": "tag",
         "description": "tag autocomplete no oficial",
-        "body": ["{% $1 %}"]
+        "body": ["{% $1 %}"],
+        "scope": "source.html.htmldjango"
     },
     "staticurl": {
         "prefix": "staticurl",
         "description": "STATIC_URL no oficial var",
-        "body": ["{{ STATIC_URL }}"]
+        "body": ["{{ STATIC_URL }}"],
+        "scope": "source.html.htmldjango"
     },
     "mediaurl": {
         "prefix": "mediaurl",
         "description": "",
-        "body": ["{{ MEDIA_URL }}"]
+        "body": ["{{ MEDIA_URL }}"],
+        "scope": "source.html.htmldjango"
+    },
+    "comment": {
+        "prefix": "cmt",
+        "description": "inline comment",
+        "body": ["<!-- $1 -->"],
+        "scope": "source.html.htmldjango"
     }
 }
+
