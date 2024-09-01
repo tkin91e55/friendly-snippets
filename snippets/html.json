@@ -765,5 +765,11 @@
         "body": ["<ol class=\"$1\" id=\"$2\">", "\t$3", "</ol>"],
         "description": "HTML - Defines an ordered list",
         "scope": "text.html"
-    }
+    },
+  "cmt": {
+        "prefix": "cmt",
+        "body": ["<!-- $1 -->"],
+        "description": "Comment",
+        "scope": "text.html"
+  }
 }
