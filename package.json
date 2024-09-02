@@ -233,7 +233,7 @@
                     "javascriptreact",
                     "htmldjango",
                     "astro",
-		    "blade"
+                    "blade"
                 ],
                 "path": "./snippets/html.json"
             },

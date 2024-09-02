@@ -260,12 +260,6 @@
         "description": "",
         "body": ["{{ MEDIA_URL }}"],
         "scope": "source.html.htmldjango"
-    },
-    "comment": {
-        "prefix": "cmt",
-        "description": "inline comment",
-        "body": ["<!-- $1 -->"],
-        "scope": "source.html.htmldjango"
     }
 }
 
