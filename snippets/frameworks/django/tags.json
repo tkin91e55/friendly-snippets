@@ -6,7 +6,7 @@
             "register = template.Library()"
         ],
         "description": "",
-        "scope": "source.python.django"
+        "scope": "source.python"
     },
     "li18n": {
         "prefix": "li18n",
@@ -35,13 +35,13 @@
             "\treturn ${3:$1}"
         ],
         "description": "",
-        "scope": "source.python.django"
+        "scope": "source.python"
     },
     "register_filter": {
         "prefix": "register_filter",
         "body": ["@register.filter", "def $1(value):", "\treturn value$2"],
         "description": "",
-        "scope": "source.python.django"
+        "scope": "source.python"
     },
     "register_inclusion_tag": {
         "prefix": "register_inclusion_tag",
@@ -56,7 +56,7 @@
             "\t}"
         ],
         "description": "",
-        "scope": "source.python.django"
+        "scope": "source.python"
     },
     "register_simple_tag": {
         "prefix": "register_simple_tag",
@@ -67,6 +67,6 @@
             "\treturn ${2:'It Works!'}"
         ],
         "description": "",
-        "scope": "source.python.django"
+        "scope": "source.python"
     }
 }
