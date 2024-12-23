@@ -40,5 +40,18 @@
             "debugpy.wait_for_client()$0"
         ],
         "description": "Code snippet for debugpy remote attach"
+    },
+   "PDB Post Mortem": {
+        "prefix": "pdbpm",
+        "body": [
+            "import pdb, traceback, sys",
+            "try:",
+            "    ${1:bad_code}",
+            "except:",
+            "    *_, tb = sys.exc_info()",
+            "    traceback.print_exc()",
+            "    pdb.post_mortem(tb)$0"
+        ],
+        "description": "Code snippet for pdb post mortem"
     }
 }
